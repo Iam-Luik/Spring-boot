@@ -17,7 +17,6 @@ public class PaisController {
 
     @PostMapping
     public ResponseEntity postPais(@RequestBody Pais novoPais) {
-
         repository.save(novoPais);
         return ResponseEntity.status(201).build();
     }
