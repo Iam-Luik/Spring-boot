@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Pais {
 
-    @Id // é a do javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -17,8 +17,6 @@ public class Pais {
     private Double idh;
     private Integer populacao;
 
-    // NÃO criar construtor
-    // criar get e set de todos
 
     public Integer getId() {
         return id;
