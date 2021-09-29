@@ -40,7 +40,6 @@ public class CarroController {
     @GetMapping("/contagem")
     public String getContagem(){
         List<Carro> carros = repository.findAll();
-        return "Há um total de "+ carros.stream().count() + " carros cadastrados";
+        return "Há um total de "+ repository.count() + " carros cadastrados";
     }
-
 }
