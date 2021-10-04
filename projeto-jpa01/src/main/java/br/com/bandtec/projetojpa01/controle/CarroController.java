@@ -1,7 +1,6 @@
 package br.com.bandtec.projetojpa01.controle;
 
 import br.com.bandtec.projetojpa01.dominio.Carro;
-import br.com.bandtec.projetojpa01.dominio.Pais;
 import br.com.bandtec.projetojpa01.repositorio.CarroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

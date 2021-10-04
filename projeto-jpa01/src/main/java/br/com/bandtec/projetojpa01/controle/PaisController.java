@@ -47,8 +47,7 @@ public class PaisController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity putPais(@PathVariable int id,
-                          @RequestBody Pais paisAtualizado) {
+    public ResponseEntity putPais(@PathVariable int id, @RequestBody Pais paisAtualizado) {
         if (repository.existsById(id)) {
             paisAtualizado.setId(id);
             repository.save(paisAtualizado);
